@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TK Gaming</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        Gaming 
+    </div>
+<nav id="navMenu">
+    <a href="#home">HOME</a>
+    <a href="#keyboard">KEYBOARD</a>
+    <a href="#mouse">MOUSE</a>
+    <a href="#headphones">HEADPHONES</a>
+    <a href="#shop">SHOP</a>
+    <a href="#about">ABOUT</a>
+    <a href="#" onclick="openLogin()">LOGIN</a>
+</nav>
+    <div class="nav-icons">
+        <i class="fa-solid fa-magnifying-glass" onclick="openSearch()"></i>
+        <i class="fa-solid fa-cart-shopping" onclick="openCart()"></i>
+        <span id="cartCount">0</span>
+        <i class="fa-solid fa-bars menu-btn" onclick="toggleMenu()"></i>
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p>Welcome!</p>
+
+        <h1>
+
+           We will provide quality and excellent products.
+           
+        </h1>
+
+        <button onclick="scrollToShop()">
+            Order Now
+        </button>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="categories">
+
+    <div class="category">
+        <i class="fa-solid fa-keyboard"></i>
+        <p>Keyborad</p>
+    </div>
+
+     </div>
+
+    <div class="category">
+    <i class="fa-solid fa-mouse"></i>
+    <p>Mouse</p>
+</div>
+
+   <div class="category">
+    <i class="fa-solid fa-headphones"></i>
+    <p>Headphones</p>
+</div>
+</section>
+
+
+
+<section class="products-section" id="keyboard">
+
+    <h2>THIS IS OUR PRODUCTS</h2>
+         <h2>KEYBOARD</h2>
+
+    <div class="products" id="keyboardProducts">
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/a1.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h3>RGB Mechanical Keyboard</h3>
+
+            <p>Premium mechanical keyboard with blue RGB lighting.</p>
+
+            <div class="product-bottom">
+                <strong>$50</strong>
+                <button onclick="addToCart('RGB Mechanical Keyboard',50)">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+        
+
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/a2.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h3>Super Mario Mechanical Keyboard</h3>
+
+            <p>Stylish, compact, and perfect for gaming and everyday typing.</p>
+
+            <div class="product-bottom">
+                <strong>$150</strong>
+                <button onclick="addToCart('Super Mario Mechanical Keyboard',150)">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/a3.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h3>G10 K70</h3>
+
+            <p>Premium Gaming Keyboard</p>
+
+            <div class="product-bottom">
+                <strong>$100</strong>
+                
+
+                <button onclick="addToCart('G10 K70',100)">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/a4.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h3>Keyboard Caps Cherry </h3>
+
+            <p>Stylish anime design with a unique black-and-white look, perfect for gaming and anime fans.</p>
+
+            <div class="product-bottom">
+                <strong>$250</strong>
+                <button onclick="addToCart('Keyboard Caps Cherry',250)">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="products-section" id="mouse">
+
+    <h2>THIS IS OUR PRODUCTS</h2>
+         <h2>MOUSE</h2>
+
+    <div class="products" id="mouse">
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/a5.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h3>Honeycomb Gaming Mouse</h3>
+
+            <p>Lightweight design, comfortable grip, and perfect for gaming.</p>
+
+            <div class="product-bottom">
+                <strong>$49.99</strong>
+                <button onclick="addToCart('Honeycomb Gaming Mouse',49.99)">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/a6.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h3>GravaStar Mercury Gaming Mouse</h3>
+
+            <p>Futuristic design, lightweight build, and perfect for gaming and modern setups.</p>
+
+            <div class="product-bottom">
+                <strong>$149.99</strong>
+                <button onclick="addToCart('GravaStar Mercury Gaming Mouse',149.99)">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/a7.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+
+            <h3>Glorious Model O Gaming Mouse</h3>
+
+            <p>Lightweight honeycomb design with RGB lighting, perfect for fast and comfortable gaming.</p>
+
+            <div class="product-bottom">
+                <strong>$170</strong>
+                <button onclick="addToCart('Glorious Model O Gaming Mouse',170)">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/a8.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h3>Wireless RGB Gaming Mouse</h3>
+
+            <p>Wireless, stylish, and comfortable with RGB lighting—perfect for gaming and everyday use.</p>
+
+            <div class="product-bottom">
+                <strong>$200</strong>
+                <button onclick="addToCart(' Wireless RGB Gaming Mouse',200)"">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="products-section" id="headphones">
+
+    <h2>THIS IS OUR PRODUCTS</h2>
+        <h2>HEADPHONES</h2>
+    <div class="products" id="Headphones">
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/a9.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h3>Black Gaming Headset</h3>
+
+            <p>Comfortable design with a clear microphone, perfect for gaming and immersive sound.</p>
+
+            <div class="product-bottom">
+                <strong>$75</strong>
+                <button onclick="addToCart('Black Gaming Headset',75)">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+        
+
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/b.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h3>Gaming Headset</h3>
+
+            <p>Stylish and comfortable design with clear sound and a quality microphone, perfect for gaming.</p>
+
+            <div class="product-bottom">
+                <strong>$50</strong>
+                <button onclick="addToCart('Dalgona Coffee',50)">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/b1.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h3>RGB Gaming Headset</h3>
+
+            <p>Stylish white design with colorful RGB lighting and a clear microphone, perfect for gaming.</p>
+
+            <div class="product-bottom">
+                <strong>$150</strong>
+                <button onclick="addToCart('RGB Gaming Headset',150)">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-img">
+                <img src="images/b2.png">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h3>ASUS ROG Strix Gaming Headset</h3>
+
+            <p>Powerful sound, comfortable design, and a clear microphone—perfect for gaming and immersive audio.</p>
+
+            <div class="product-bottom">
+                <strong>$249.99</strong>
+                <button onclick="addToCart('ASUS ROG Strix Gaming Headset',249.99)">
+                    Order Now
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ================= COFFEE BEANS ================= -->
+
+<section class="beans" id="shop">
+
+    <img src="images/b3.png">
+
+    <div class="beans-content">
+
+        <h2>
+            Check out our best
+            <br>
+            gaming betans
+        </h2>
+
+        <button onclick="scrollToShop()">
+            Explore our products →
+        </button>
+
+    </div>
+
+    <img src="images/b4.png">
+
+</section>
+
+
+<!-- ================= REVIEWS ================= --><!-- ================= GAMER REVIEWS ================= -->
+
+<section class="reviews" id="about">
+
+    <p class="review-small">
+        Join Our Gaming Community
+    </p>
+
+    <h2>WHAT GAMERS SAY</h2>
+
+    <div class="review-container">
+
+        <div class="review-card">
+
+            <div class="review-user">
+                <div class="avatar">J</div>
+
+                <div>
+                    <h4>John Gamer</h4>
+                    <small>Pro Player</small>
+                </div>
+
+                <span>★★★★★</span>
+            </div>
+
+            <p>
+                Amazing gaming gear! My new keyboard and
+                mouse make gaming smoother and faster.
+                Highly recommended for every gamer!
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="review-user">
+                <div class="avatar">S</div>
+
+                <div>
+                    <h4>Sam Williams</h4>
+                    <small>Streamer</small>
+                </div>
+
+                <span>★★★★★</span>
+            </div>
+
+            <p>
+                The quality of the gaming headset is amazing.
+                Crystal-clear sound and an awesome design.
+                Perfect for streaming and competitive gaming!
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="review-user">
+                <div class="avatar">A</div>
+
+                <div>
+                    <h4>Alex Gaming</h4>
+                    <small>Esports Player</small>
+                </div>
+
+                <span>★★★★★</span>
+            </div>
+
+            <p>
+                Best place to buy gaming accessories!
+                Great products, stylish RGB lighting,
+                and excellent quality for the price.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="dots">
+        ● ● ●
+    </div>
+
+</section>
+
+
+<!-- ================= GAMING NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <h2>Level Up! Get 15% OFF 🎮</h2>
+
+    <p>
+        Subscribe to our gaming newsletter and get
+        15% OFF your next gaming gear purchase!
+    </p>
+
+    <div class="subscribe">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="✉ Enter your email address">
+
+        <button onclick="subscribeUser()">
+            Subscribe
+        </button>
+
+    </div>
+
+</section>
+
+
+
+
+<footer>
+
+    <div>
+        <div class="footer-logo">
+            🎮 Gaming
+        </div>
+
+        <p>
+            Play Better. Game Harder. Win Bigger.
+        </p>
+    </div>
+
+    <div>
+        <h4>LEGAL</h4>
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+        <p>Cookie Policy</p>
+    </div>
+
+    <div>
+        <h4>GAMING GEAR</h4>
+        <p>Gaming Keyboards</p>
+        <p>Gaming Mice</p>
+        <p>Gaming Headsets</p>
+        <p>Gaming Chairs</p>
+    </div>
+
+    <div>
+        <h4>ABOUT US</h4>
+        <p>Our Story</p>
+        <p>Contact Us</p>
+        <p>Our Community</p>
+    </div>
+
+    <div>
+        <h4>SUPPORT</h4>
+        <p>Help Center</p>
+        <p>Shipping Information</p>
+        <p>Returns & Refunds</p>
+    </div>
+
+    <div>
+        <h4>FOLLOW US</h4>
+
+        <div class="social">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-discord"></i>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= SEARCH MODAL ================= -->
+
+<div class="modal" id="searchModal">
+
+    <div class="modal-box">
+
+        <span class="close" onclick="closeSearch()">×</span>
+
+        <h2>🎮 Search Gaming Gear</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search keyboards, mice, headsets..."
+            onkeyup="searchProducts()">
+
+        <div id="searchResult"></div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= LOGIN MODAL ================= -->
+
+<div class="modal" id="loginModal">
+
+    <div class="modal-box">
+
+        <span class="close" onclick="closeLogin()">×</span>
+
+        <h2>🎮 Gamer Login</h2>
+
+        <input
+            type="text"
+            placeholder="Username">
+
+        <input
+            type="password"
+            placeholder="Password">
+
+        <button class="modal-button" onclick="login()">
+            Login
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= GAMING CART MODAL ================= -->
+
+<div class="modal" id="cartModal">
+
+    <div class="modal-box cart-box">
+
+        <span class="close" onclick="closeCart()">×</span>
+
+        <h2>🛒 Your Gaming Gear</h2>
+
+        <div id="cartItems"></div>
+
+        <h3>
+            Total:
+            <span id="cartTotal">Rs. 0</span>
+        </h3>
+
+        <button class="modal-button" onclick="checkout()">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
